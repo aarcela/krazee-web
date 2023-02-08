@@ -5,7 +5,7 @@ export default component$(() => {
   return (
     <div
       class="bg-cover bg-center min-h-screen"
-      style={"background-image: url(/public/comingSoon.png)"}
+      style={"background-image: url(/comingSoon.png)"}
     >
       {/* <img src="/public/comingSoon.png" alt="landing" class="object-cover" /> */}
     </div>
