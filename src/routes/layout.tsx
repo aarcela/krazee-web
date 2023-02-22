@@ -6,7 +6,7 @@ export default component$(() => {
     <>
       <main>
         <Header />
-        <section>
+        <section class="bg-black w-full">
           <Slot />
         </section>
       </main>

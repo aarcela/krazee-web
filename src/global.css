@@ -9,6 +9,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 :root {
   --qwik-dark-blue: #006ce9;
   --qwik-light-blue: #18b6f6;
