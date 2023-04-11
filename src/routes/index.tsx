@@ -104,7 +104,10 @@ export default component$(() => {
           Si quieres formar parte de Krazee lab, envíanos todos tus datos.
         </h2>
         <div class="mt-10">
-          <Button text="Here" />
+          <Button
+            text="Here"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSdcjo6NOoq2eO23pqSTQAHPoLwKCgn0soKwp5X2oH9IbZ7Fmg/viewform?usp=sf_link"
+          />
         </div>
         <img class=" w-full" src="/images/lines_3.png" alt="remoto_lines" />
       </section>
@@ -131,7 +134,10 @@ export default component$(() => {
           Si prefieres explicarnos más en detalle, sobre qué servicio necesitas
           que te ayudemos… Dale click al botón y deja volar tu imaginación .
         </div>
-        <Button text="Contratar"></Button>
+        <Button
+          text="Contratar"
+          link="https://docs.google.com/forms/d/e/1FAIpQLSdwEGbHBpfasvIxEH3-KtdPrMGsU6cP8wXiUuu4A6SospJFsQ/viewform?usp=sf_link"
+        ></Button>
       </section>
     </>
   );

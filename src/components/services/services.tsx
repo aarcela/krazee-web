@@ -64,7 +64,7 @@ export default component$(() => {
           </div>
         </div>
         <div class="mt-10 text-center">
-          <Button text="Contratar" />
+          <Button text="Contratar" link=" https://docs.google.com/forms/d/1-dF0xKk66t-qi1nc6iSDFZxIPZri6uuXJkjF0UQLX2I/edit?ts=63f3ed40"/>
         </div>
       </section>
     </>

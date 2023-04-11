@@ -4,6 +4,7 @@ import styles from "./button.css?inline";
 
 interface ButtonProps {
   text: string;
+  link: string;
 }
 
 export default component$((props: ButtonProps) => {
@@ -18,7 +19,7 @@ export default component$((props: ButtonProps) => {
 		m-auto
 		border-solid border-white border-2"
     >
-      <a href="https://docs.google.com/forms/d/1-dF0xKk66t-qi1nc6iSDFZxIPZri6uuXJkjF0UQLX2I/edit?ts=63f3ed40">
+      <a href={props.link}>
         <button>{props.text}</button>
       </a>
     </div>
