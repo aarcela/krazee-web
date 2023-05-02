@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import About from "~/components/about/about";
 import Button from "~/components/buttons/button";
+import ColorBar from "~/components/color-bar/color-bar";
 import Services from "~/components/services/services";
 
 export default component$(() => {
@@ -13,7 +14,7 @@ export default component$(() => {
           sm:bg-main-bg"
       ></section>
       <Services />
-      <section class="sm:mt-10">
+      <section id="about" class="sm:mt-10">
         <img class="self-start w-full" src="/images/lines_3.png" alt="01" />
       </section>
       <section class="flex flex-col pt-10 text-white  w-full">
@@ -23,8 +24,9 @@ export default component$(() => {
             src="images/circle.png"
             alt="circle"
           />
-          <h2 class="italic mt-10 underline self-start ml-5 text-2xl mb-10">
+          <h2 class="italic mt-10 self-start ml-5 text-2xl mb-10">
             Quienes somos?
+            <ColorBar />
           </h2>
         </div>
         <div class="flex sm:flex-row justify-center ">
@@ -51,10 +53,11 @@ export default component$(() => {
             alt="circle"
           />
           <h2
-            class="italic underline decoration-cyan-500  decoration-dashed decoration-2
+            class="italic decoration-cyan-500  decoration-dashed decoration-2
 				self-start text-2xl ml-5"
           >
             Filosofía
+            <ColorBar />
           </h2>
         </div>
         <div class="self-center w-1/2 sm:w-1/4 text-right mr-10 sm:text-center mt-20 sm:self-center">
@@ -79,20 +82,21 @@ export default component$(() => {
           del mundo."
         title="Lifestyle"
       />
-      <section class="relative flex flex-col bg-black pt-10 text-white  w-full">
+      <section id="job" class="flex flex-col bg-black pt-10 text-white  w-full">
         <img
-          class=" w-full
+          class="w-full self-center
         sm:w-1/3"
           src="/images/remoto.png"
           alt="remoto"
         />
         <img
-          class=" w-full absolute bottom-1 sm:hidden"
+          class=" w-full bottom-1 sm:hidden"
           src="/images/remoto_lines.png"
           alt="remoto_lines"
         />
-        <h2 class=" font-bold self-center ml-20 text-4xl absolute bottom-0">
+        <h2 class=" font-bold self-center ml-20 text-4xl bottom-0">
           Work with us
+          <ColorBar />
         </h2>
       </section>
       <section class="flex flex-col bg-black pt-20 text-white text-center w-full">
@@ -111,7 +115,10 @@ export default component$(() => {
         </div>
         <img class=" w-full" src="/images/lines_3.png" alt="remoto_lines" />
       </section>
-      <section class="flex flex-col bg-black pt-20 text-white w-full pb-10">
+      <section
+        id="contact"
+        class="flex flex-col bg-black pt-20 text-white w-full pb-10"
+      >
         <h2 class="font-bold self-center ml-20 text-4xl mb-20">Contacts</h2>
         <div class="self-end mr-5">
           <a href="https://www.tiktok.com/@krazeelab">
@@ -134,10 +141,12 @@ export default component$(() => {
           Si prefieres explicarnos más en detalle, sobre qué servicio necesitas
           que te ayudemos… Dale click al botón y deja volar tu imaginación .
         </div>
+        <div class="self-end w-3/4">
         <Button
           text="Contratar"
           link="https://docs.google.com/forms/d/e/1FAIpQLSdwEGbHBpfasvIxEH3-KtdPrMGsU6cP8wXiUuu4A6SospJFsQ/viewform?usp=sf_link"
-        ></Button>
+          ></Button>
+          </div>
       </section>
     </>
   );

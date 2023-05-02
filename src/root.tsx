@@ -35,12 +35,21 @@ export default component$(() => {
           integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
-        />       
-        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet" /> 
-        <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap" rel="stylesheet" /> 
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body>
+      <body class="scroll-smooth">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

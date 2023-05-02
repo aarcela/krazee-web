@@ -1,5 +1,6 @@
 import { component$, useStore } from "@builder.io/qwik";
 import Button from "../buttons/button";
+import ColorBar from "../color-bar/color-bar";
 
 // interface SizeInputProps {
 //   value: number;
@@ -10,14 +11,15 @@ export default component$(() => {
   const state = useStore({ count: '1' });
 	return (
     <>
-      <section class="flex flex-col justify-center	content-center">
+      <section id="services" class="flex flex-col justify-center	content-center">
         <div
-          class="p-10 text-center  text-white font-normal text-xl
-        sm:mt-20 sm:self-center"
+          class="sm:w-3/4 text-center  text-white font-normal text-xl
+        sm:mt-20 sm:self-center sm:text-3xl"
         >
           <div class="sm:flex sm:flex-row">
-            <div class="sm:w-1/2">
+            <div class=" text-left m-5 sm:w-1/2">
               <h1>Podemos ayudarte con</h1>
+              <ColorBar />
               <div class="mt-5 p-1 bg-gradient-to-r from-yellow-500 to-red-700 bg-black rounded-full  ">
                 <select
                   onChange$={(e) => {
@@ -26,16 +28,15 @@ export default component$(() => {
                   class="bg-black rounded-full w-full"
                   name="services"
                 >
-                  <option>Seleciona servicio</option>
                   <option selected value={1}>
-                    Gestión
+                    &nbsp; Gestión
                   </option>
-                  <option value={2}>Asesoría y Consulta</option>
-                  <option value={3}>Publicidad</option>
+                  <option value={2}>&nbsp; Asesoría y Consulta</option>
+                  <option value={3}>&nbsp; Publicidad</option>
                 </select>
               </div>
             </div>
-            <div class="mt-10  font-regular p-5 sm:p-0 sm:border-l-white">
+            <div class="sm:w-2/3 mt-10  font-regular p-5 sm:p-0 sm:border-l-white text-justify">
               {state.count === "1" && (
                 <h2>
                   Te ayudamos en como llevar y darle la mano a tus comunidades
@@ -64,7 +65,10 @@ export default component$(() => {
           </div>
         </div>
         <div class="mt-10 text-center">
-          <Button text="Contratar" link=" https://docs.google.com/forms/d/1-dF0xKk66t-qi1nc6iSDFZxIPZri6uuXJkjF0UQLX2I/edit?ts=63f3ed40"/>
+          <Button
+            text="Contratar"
+            link=" https://docs.google.com/forms/d/1-dF0xKk66t-qi1nc6iSDFZxIPZri6uuXJkjF0UQLX2I/edit?ts=63f3ed40"
+          />
         </div>
       </section>
     </>
