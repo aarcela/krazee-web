@@ -9,9 +9,12 @@ export default component$(() => {
 		h-36
 		"
     >
-      <h2 class="text-white">+00123456789</h2>
-      <h2 class="text-white">+Hello@krazeelab.com</h2>
-      <h2 class="text-white">Miami, Madrid, Caracas</h2>
+      <div>
+        <h2 class="text-white">+1 (786) 705-3222</h2>
+        <h2 class="text-white">+34 625 82 89 09</h2>
+      </div>
+      <h2 class="text-white">hello@krazeelab.com</h2>
+      <h2 class="text-white">Caracas, Madrid, Miami</h2>
     </footer>
   );
 })

@@ -1,4 +1,4 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
+import { component$, useClientEffect$, useStylesScoped$ } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
 // import { QwikLogo } from '../icons/qwik';
 import styles from './header.css?inline';
@@ -6,6 +6,21 @@ import styles from './header.css?inline';
 export default component$(() => {
   useStylesScoped$(styles);
 
+  useClientEffect$(() => {
+
+    let prevScrollpos = window.pageYOffset;
+    const header = document.getElementById("header")!;
+    window.onscroll = function () {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        header.style.visibility = "visible";
+      } else {
+        header.style.visibility = "hidden";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  });
+    
   return (
     <>
       <header
@@ -54,7 +69,7 @@ export default component$(() => {
             Contacts
           </button>
         </div>
-        <div class="flex items-center justify-around mr-10">
+        <div class="flex items-center justify-around mr-10 text-white">
           <a href="https://www.tiktok.com/@krazeelab">
             <i class="fa-brands fa-tiktok p-4 border-white rounded"></i>
           </a>

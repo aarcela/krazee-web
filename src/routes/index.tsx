@@ -82,7 +82,7 @@ export default component$(() => {
           del mundo."
         title="Lifestyle"
       />
-      <section id="job" class="flex flex-col bg-black pt-10 text-white  w-full">
+      <section id="job" class="flex flex-col bg-black pt-10 text-white  w-full text-center">
         <img
           class="w-full self-center
         sm:w-1/3"
@@ -94,15 +94,17 @@ export default component$(() => {
           src="/images/remoto_lines.png"
           alt="remoto_lines"
         />
-        <h2 class=" font-bold self-center ml-20 text-4xl bottom-0">
+        <h2 class=" font-bold self-center text-4xl bottom-0">
           Work with us
-          <ColorBar />
         </h2>
       </section>
       <section class="flex flex-col bg-black pt-20 text-white text-center w-full">
         <h2 class="self-center ml-20 text-xl w-3/4 font-light">
-          Estamos en constante crecimiento y por eso buscamos gente KRAZEE como
+          Estamos en constante crecimiento 
           tú.
+        </h2>
+        <h2 class="self-center ml-20 text-xl w-3/4 font-light pt-4">
+          y por eso buscamos gente KRAZEE como tú.
         </h2>
         <h2 class="self-center ml-20 text-xl w-3/4 font-light pt-4">
           Si quieres formar parte de Krazee lab, envíanos todos tus datos.
@@ -117,36 +119,39 @@ export default component$(() => {
       </section>
       <section
         id="contact"
-        class="flex flex-col bg-black pt-20 text-white w-full pb-10"
+        class="flex flex-col bg-black pt-20 text-white pb-10 justify-center content-center"
       >
-        <h2 class="font-bold self-center ml-20 text-4xl mb-20">Contacts</h2>
-        <div class="self-end mr-5">
-          <a href="https://www.tiktok.com/@krazeelab">
-            <i class="fa-brands fa-tiktok p-4 border-white rounded"></i>
-          </a>
-          <a href="https://twitter.com/KrazeeLab">
-            <i class="fa-brands fa-twitter p-4 "></i>
-          </a>
-          <a href="https://www.instagram.com/krazeelab/">
-            <i class="fa-brands fa-instagram p-4 "></i>
-          </a>
-        </div>
-        <div class="self-end w-full text-right mr-5">
-          <h2 class="text-l font-light pt-4">+00 123 45 67 89</h2>
-          <h2 class="text-l  font-light pt-4">
-            <a href="mailto:krazeelab@gmail.com">Hello@krazeelab.com</a>
-          </h2>
-        </div>
-        <div class="self-end w-1/2 text-right text-l pt-4 mr-5">
-          Si prefieres explicarnos más en detalle, sobre qué servicio necesitas
-          que te ayudemos… Dale click al botón y deja volar tu imaginación .
-        </div>
-        <div class="self-end w-3/4">
-        <Button
-          text="Contratar"
-          link="https://docs.google.com/forms/d/e/1FAIpQLSdwEGbHBpfasvIxEH3-KtdPrMGsU6cP8wXiUuu4A6SospJFsQ/viewform?usp=sf_link"
-          ></Button>
+        <div class=" text-center sm:self-center">
+          <h2 class="font-bold self-end text-4xl mb-20">Contacts</h2>
+          <div class="self-end text-right">
+            <a href="https://www.tiktok.com/@krazeelab">
+              <i class="fa-brands fa-tiktok p-4 border-white rounded"></i>
+            </a>
+            <a href="https://twitter.com/KrazeeLab">
+              <i class="fa-brands fa-twitter p-4 "></i>
+            </a>
+            <a href="https://www.instagram.com/krazeelab/">
+              <i class="fa-brands fa-instagram p-4 "></i>
+            </a>
           </div>
+          <div class="self-end text-right">
+            <h2 class="text-l font-light pt-4">+00 123 45 67 89</h2>
+            <h2 class="text-l  font-light pt-4">
+              <a href="mailto:krazeelab@gmail.com">Hello@krazeelab.com</a>
+            </h2>
+          </div>
+          <div class="self-end text-right text-l pt-4">
+            Si prefieres explicarnos más en detalle, sobre qué servicio
+            necesitas que te ayudemos… Dale click al botón y deja volar tu
+            imaginación .
+          </div>
+          <div class="self-end mt-5">
+            <Button
+              text="Contratar"
+              link="https://docs.google.com/forms/d/e/1FAIpQLSdwEGbHBpfasvIxEH3-KtdPrMGsU6cP8wXiUuu4A6SospJFsQ/viewform?usp=sf_link"
+            ></Button>
+          </div>
+        </div>
       </section>
     </>
   );

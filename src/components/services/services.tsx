@@ -29,37 +29,108 @@ export default component$(() => {
                   name="services"
                 >
                   <option selected value={1}>
-                    &nbsp; Gestión
+                    &nbsp; Marketing digital
                   </option>
-                  <option value={2}>&nbsp; Asesoría y Consulta</option>
-                  <option value={3}>&nbsp; Publicidad</option>
+                  <option value={2}>&nbsp; Asesoría/Consultoría</option>
+                  <option value={3}>&nbsp; Diseño gráfico</option>
+                  <option value={4}>&nbsp; Diseño UX/UI</option>
+                  <option value={5}>&nbsp; Desarrollo web/mobile</option>
                 </select>
               </div>
             </div>
             <div class="sm:w-2/3 mt-10  font-regular p-5 sm:p-0 sm:border-l-white text-justify">
               {state.count === "1" && (
-                <h2>
-                  Te ayudamos en como llevar y darle la mano a tus comunidades
-                  virtuales, en programar tu contenido y en traducir cada una de
-                  las interacciones en tus redes; si quieres
-                </h2>
+                <>
+                  <h2>
+                    Ayudamos a las empresas a aumentar su presencia en línea y a
+                    conectarse con su público objetivo a través de plataformas
+                    de las redes sociales más populares, como Facebook,
+                    Instagram, Twitter, LinkedIn, entre otras. Así mismo,
+                    ofrecemos una variedad de servicios para la gestión de redes
+                    sociales que incluyen:
+                  </h2>
+                  <ul class="list-disc p-5 text-2xl">
+                    <li>
+                      Creación y mantenimiento de perfiles de redes sociales
+                    </li>
+                    <li>Creación y publicación de contenido</li>
+                    <li>Interacción con los seguidores</li>
+                    <li>Análisis de datos y métricas</li>
+                    <li>Gestión de publicidad en redes sociales</li>
+                    <li>Paid media</li>
+                  </ul>
+                </>
               )}
               {state.count === "2" && (
-                <h2>
-                  Si tú deseo y proyección es ser viral, aquí estamos para
-                  mostrarte la estrategia y montarte en la ola de las
-                  tendencias; si quieres mantenerte en el tiempo y ser
-                  reconocido, también sabemos cómo.
-                </h2>
+                <>
+                  <h2>
+                    Nuestro objetivo es apoyar a las empresas a desarrollar
+                    estrategias efectivas que les permitan alcanzar sus
+                    objetivos de negocio y aumentar su presencia tanto online
+                    como offline. Nuestras asesorías y consultorías incluyen
+                    entre otras cosas:
+                  </h2>
+                  <ul class="list-disc p-5 text-2xl">
+                    <li>
+                      Análisis y evaluación de la estrategia de marketing actual
+                    </li>
+                    <li>Desarrollo de estrategias de marketing</li>
+                    <li>Diseño y desarrollo de la imagen de marca</li>
+                    <li>Desarrollo de campañas de publicidad y promoción</li>
+                    <li>Evaluación y análisis de resultados</li>
+                  </ul>
+                </>
               )}
               {state.count === "3" && (
-                <h2>
-                  Que si tienes que invertir en redes sociales? Of course My
-                  Dear, aquí te mostramos dónde, cuánto, cómo y porqué.
-                  Identidad de marca Tu tienes la idea, nosotros el arsenal
-                  cerebral y Krazee para que el público se identifique con tu
-                  producto o servicio.
-                </h2>
+                <>
+                  <h2>
+                    Diseños personalizados para ayudar a las empresas a crear
+                    una identidad visual única y cohesiva que refleje sus
+                    valores y objetivos de negocio.
+                  </h2>
+                  <ul class="list-disc p-5 text-2xl">
+                    <li>Branding</li>
+                    <li>Diseño de logotipos</li>
+                    <li>Diseño de material impreso</li>
+                    <li>Diseño de imagen digital</li>
+                    <li>Diseño de packaging</li>
+                  </ul>
+                </>
+              )}
+              {state.count === "4" && (
+                <>
+                  <h2>
+                    Ofrecemos servicios de diseño de experiencia de usuario (UX)
+                    y diseño de interfaz de usuario (UI) para ayudar a las
+                    empresas a crear interfaces digitales efectivas y atractivas
+                    que brinden una experiencia de usuario óptima.
+                  </h2>
+                  <ul class="list-disc p-5 text-2xl">
+                    <li>Investigación y análisis de usuario</li>
+                    <li>Diseño de experiencia de usuario</li>
+                    <li>Diseño de interfaz de usuario</li>
+                    <li>Desarrollo de prototipos interactivos</li>
+                    <li>Optimización de la interfaz</li>
+                  </ul>
+                </>
+              )}
+              {state.count === "5" && (
+                <>
+                  <h2>
+                    Ofrecemos servicios de desarrollo web y móvil para ayudar a
+                    las empresas a crear sitios web y aplicaciones móviles
+                    atractivas, funcionales y optimizadas para la experiencia
+                    del usuario. Nuestros servicios de desarrollo web y móvil
+                    incluyen:
+                  </h2>
+                  <ul class="list-disc p-5 text-2xl">
+                    <li>Diseño web</li>
+                    <li>Desarrollo web</li>
+                    <li>Diseño de aplicaciones móviles</li>
+                    <li>Desarrollo de aplicaciones móviles</li>
+                    <li>Integración y optimización</li>
+                  </ul>
+                </>
               )}
             </div>
           </div>

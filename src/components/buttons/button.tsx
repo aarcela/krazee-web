@@ -13,7 +13,7 @@ export default component$((props: ButtonProps) => {
   return (
     <div
       class="font-light text-white text-center
-		bg-gradient-to-r from-lime-200 to-cyan-500 w-1/3 
+		bg-gradient-to-r from-lime-200 to-cyan-500 w-1/4 
 		rounded-full
 		p-2
 		m-auto
