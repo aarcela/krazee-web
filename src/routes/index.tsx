@@ -99,14 +99,14 @@ export default component$(() => {
         </h2>
       </section>
       <section class="flex flex-col bg-black pt-20 text-white text-center w-full">
-        <h2 class="self-center ml-20 text-xl w-3/4 font-light">
+        <h2 class="self-center text-xl font-light">
           Estamos en constante crecimiento 
           tú.
         </h2>
-        <h2 class="self-center ml-20 text-xl w-3/4 font-light pt-4">
+        <h2 class="self-center text-xl font-light pt-4">
           y por eso buscamos gente KRAZEE como tú.
         </h2>
-        <h2 class="self-center ml-20 text-xl w-3/4 font-light pt-4">
+        <h2 class="self-center text-xl font-light pt-4">
           Si quieres formar parte de Krazee lab, envíanos todos tus datos.
         </h2>
         <div class="mt-10">
