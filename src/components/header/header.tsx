@@ -1,10 +1,16 @@
-import { component$, useClientEffect$, useStylesScoped$ } from '@builder.io/qwik';
+import { component$, useClientEffect$, useStylesScoped$, $, useSignal } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
 // import { QwikLogo } from '../icons/qwik';
 import styles from './header.css?inline';
+import Mobile_menu from '../mobile_menu';
 
 export default component$(() => {
+
   useStylesScoped$(styles);
+  const showMenuBar = useSignal(false);
+  const clickShowMenuBar = $(() => {
+    showMenuBar.value = !showMenuBar.value;
+  });
 
   useClientEffect$(() => {
 
@@ -82,10 +88,14 @@ export default component$(() => {
         </div>
       </header>
       <header class="flex fixed w-full justify-end sm:hidden">
-        <Link href="/" class="m-3">
-          <img src="/images/mobile/botton_menu_mobile.png" alt="mini_logo" />
-        </Link>
+          <img
+            class="m-3"
+            src="/images/mobile/botton_menu_mobile.png"
+            alt="mini_logo"
+            onClick$={clickShowMenuBar}
+          />
       </header>
+      {showMenuBar.value && <Mobile_menu  hide$={clickShowMenuBar}/>}
     </>
   );
 });
