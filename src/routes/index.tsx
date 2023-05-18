@@ -14,9 +14,7 @@ export default component$(() => {
           sm:bg-main-bg"
       ></section>
       <Services />
-      <section
-        id="about"
-      >
+      <section id="about">
         <img class="object-fill" src="/images/lines_3.svg" alt="01" />
       </section>
       <section class="flex flex-col pt-10 text-white mx-auto sm:w-3/4">
@@ -123,7 +121,7 @@ export default component$(() => {
         id="contact"
         class="flex flex-col bg-black pt-20 text-white pb-10 justify-center content-center"
       >
-        <div class="flex flex-col text-center sm:self-center">
+        <div class="flex flex-col text-center sm:self-center mr-5 sm:mr-0">
           <h2 class="font-bold self-end text-4xl mb-20">Contacts</h2>
           <div class="self-end text-right">
             <a href="https://www.tiktok.com/@krazeelab">
@@ -137,12 +135,13 @@ export default component$(() => {
             </a>
           </div>
           <div class="self-end text-right">
-            <h2 class="text-l font-light pt-4">+00 123 45 67 89</h2>
+            <h2 class="text-l font-light pt-4">+1 786 705-3222</h2>
+            <h2 class="text-l font-light pt-4">+34 625 82 89 09</h2>
             <h2 class="text-l  font-light pt-4">
               <a href="mailto:krazeelab@gmail.com">Hello@krazeelab.com</a>
             </h2>
           </div>
-          <div class="self-end text-right text-l pt-4 w-1/3">
+          <div class="self-end text-right text-l pt-4 sm:w-1/3">
             Si prefieres explicarnos más en detalle, sobre qué servicio
             necesitas que te ayudemos… Dale click al botón y deja volar tu
             imaginación .
