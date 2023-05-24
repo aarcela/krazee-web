@@ -20,7 +20,7 @@ export default component$(() => {
             <div class=" text-left m-5 sm:w-1/2">
               <h1>Podemos ayudarte con</h1>
               <ColorBar />
-              <div class="mt-5 p-1 bg-gradient-to-r from-yellow-500 to-red-700 bg-black rounded-full  ">
+              <div class="sm:hidden mt-5 p-1 bg-gradient-to-r from-yellow-500 to-red-700 bg-black rounded-full  ">
                 <select
                   onChange$={(e) => {
                     state.count = e.target.value;
@@ -37,6 +37,68 @@ export default component$(() => {
                   <option value={5}>&nbsp; Desarrollo web/mobile</option>
                 </select>
               </div>
+              <li class="hidden mt-5 list-none sm:block">
+                <ul
+                  class={
+                    state.count === "1"
+                      ? "p-1 bg-gradient-to-r from-yellow-500 to-red-700 rounded-full "
+                      : ""
+                  }
+                  onClick$={() => {
+                    state.count = "1";
+                  }}
+                >
+                  &nbsp; Marketing digital
+                </ul>
+                <ul
+                  class={
+                    state.count === "2"
+                      ? "p-1 bg-gradient-to-r from-yellow-500 to-red-700 rounded-full "
+                      : ""
+                  }
+                  onClick$={() => {
+                    state.count = "2";
+                  }}
+                >
+                  &nbsp; Asesoría/Consultoría
+                </ul>
+                <ul
+                  class={
+                    state.count === "3"
+                      ? "p-1 bg-gradient-to-r from-yellow-500 to-red-700 rounded-full "
+                      : ""
+                  }
+                  onClick$={() => {
+                    state.count = "3";
+                  }}
+                >
+                  &nbsp; Diseño gráfico
+                </ul>
+                <ul
+                  class={
+                    state.count === "4"
+                      ? "p-1 bg-gradient-to-r from-yellow-500 to-red-700 rounded-full "
+                      : ""
+                  }
+                  onClick$={() => {
+                    state.count = "4";
+                  }}
+                >
+                  &nbsp; Diseño UX/UI
+                </ul>
+                <ul
+                  class={
+                    state.count === "5"
+                      ? "p-1 bg-gradient-to-r from-yellow-500 to-red-700 rounded-full "
+                      : ""
+                  }
+                  onClick$={() => {
+                    state.count = "5";
+                  }}
+                >
+                  &nbsp; Desarrollo web/mobile
+                </ul>
+              </li>
             </div>
             <div class="sm:w-2/3 mt-10  font-regular p-5 sm:p-0 sm:border-l-white text-justify">
               {state.count === "1" && (
