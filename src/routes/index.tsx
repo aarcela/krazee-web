@@ -15,7 +15,7 @@ export default component$(() => {
       ></section>
       <Services />
       <section id="about">
-        <img class="object-fill" src="/images/lines_3.svg" alt="01" />
+        <img class="w-full" src="/images/lines_3.svg" alt="01" />
       </section>
       <section class="flex flex-col pt-10 text-white mx-auto sm:w-3/4">
         <div class="flex flex-row ml-5">
@@ -36,7 +36,7 @@ export default component$(() => {
             alt="01"
           />
           <div
-            class="self-end w-full sm:w text-right text-xl mr-10
+            class="self-end w-full text-right text-xl mr-10
           sm:w-1/4"
           >
             Si crees que somos una agencia más de diseño, web y marketing,
