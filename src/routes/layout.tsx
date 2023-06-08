@@ -5,13 +5,11 @@ import Footer from '~/components/footer/footer';
 export default component$(() => {
   return (
     <>
-      <main>
-        <Header />
-        <section class="bg-black w-full">
-          <Slot />
-        </section>
+      <Header />
+      <main class="bg-black w-full">
+        <Slot />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 });

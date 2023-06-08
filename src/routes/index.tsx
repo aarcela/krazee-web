@@ -2,8 +2,8 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import About from "~/components/about/about";
 import Button from "~/components/buttons/button";
-import ColorBar from "~/components/color-bar/color-bar";
 import Services from "~/components/services/services";
+import Weare from "~/components/weare/weare";
 
 export default component$(() => {
   return (
@@ -17,56 +17,7 @@ export default component$(() => {
       <section id="about">
         <img class="w-full" src="/images/lines_3.svg" alt="01" />
       </section>
-      <section class="flex flex-col pt-10 text-white mx-auto sm:w-3/4">
-        <div class="flex flex-row ml-5">
-          <img
-            class="w-5 h-5 self-center animate-pulse"
-            src="images/circle.png"
-            alt="circle"
-          />
-          <h2 class="italic mt-10 self-start ml-5 text-2xl mb-10">
-            Quienes somos?
-            <ColorBar />
-          </h2>
-        </div>
-        <div class="flex sm:flex-row justify-center ">
-          <img
-            class="self-start w-full sm:w-1/4 animate-pulse"
-            src="/images/numbers/01.svg"
-            alt="01"
-          />
-          <div
-            class="self-end w-full text-right text-xl mr-10
-          sm:w-1/4"
-          >
-            Si crees que somos una agencia más de diseño, web y marketing,
-            pues... Te demostraremos lo KRAZEE que somos para superar las
-            expectativas de tus ideas.
-          </div>
-        </div>
-      </section>
-      <section class="flex flex-col bg-black mt-10 text-white  mx-auto sm:w-3/4">
-        <div class="flex flex-row ml-5">
-          <img
-            class="w-5 h-5 self-center animate-pulse"
-            src="images/circle.png"
-            alt="circle"
-          />
-          <h2
-            class="italic decoration-cyan-500  decoration-dashed decoration-2
-				self-start text-2xl ml-5"
-          >
-            Filosofía
-            <ColorBar />
-          </h2>
-        </div>
-        <div class="self-center w-1/2 sm:w-1/4 text-right mr-10 sm:text-center mt-20 sm:self-center">
-          <p class="text-3xl">Lo convencional está bien, </p>
-          <p class="font-gothic text-7xl">aunque NOSOTROS haremos</p>
-          <p class="font-zeyada text-5xl">que tu marca sea</p>
-          <p class="font-tourney text-5xl sm:text-6xl">DISRUPTIVA</p>
-        </div>
-      </section>
+      <Weare />
 
       <About
         text="Nuestro nombre KRAZEE surge de la locura que sentimos por lo que nos

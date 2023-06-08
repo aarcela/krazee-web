@@ -13,8 +13,8 @@ export default component$(() => {
     <>
       <section id="services" class="flex flex-col justify-center	content-center">
         <div
-          class="sm:w-3/4 text-center  text-white font-normal text-xl
-        sm:mt-20 sm:self-center sm:text-3xl"
+          class="text-center  text-white font-normal text-xl
+        sm:mt-20 sm:self-center sm:text-3xl sm:w-3/4 "
         >
           <div class="sm:flex sm:flex-row">
             <div class=" text-left m-5 sm:w-1/2">
@@ -100,7 +100,7 @@ export default component$(() => {
                 </ul>
               </li>
             </div>
-            <div class="sm:w-2/3 mt-10  font-regular p-5 sm:p-0 sm:border-l-white text-justify">
+            <div class="sm:w-2/3 sm:text-justify mt-10  p-5 sm:p-0 sm:border-l-white text-left">
               {state.count === "1" && (
                 <>
                   <h2>
@@ -111,7 +111,7 @@ export default component$(() => {
                     ofrecemos una variedad de servicios para la gestión de redes
                     sociales que incluyen:
                   </h2>
-                  <ul class="list-disc p-5 text-2xl">
+                  <ul class="list-disc p-5 text-xl">
                     <li>
                       Creación y mantenimiento de perfiles de redes sociales
                     </li>
@@ -132,7 +132,7 @@ export default component$(() => {
                     como offline. Nuestras asesorías y consultorías incluyen
                     entre otras cosas:
                   </h2>
-                  <ul class="list-disc p-5 text-2xl">
+                  <ul class="list-disc p-5 text-xl">
                     <li>
                       Análisis y evaluación de la estrategia de marketing actual
                     </li>
@@ -150,7 +150,7 @@ export default component$(() => {
                     una identidad visual única y cohesiva que refleje sus
                     valores y objetivos de negocio.
                   </h2>
-                  <ul class="list-disc p-5 text-2xl">
+                  <ul class="list-disc p-5 text-xl">
                     <li>Branding</li>
                     <li>Diseño de logotipos</li>
                     <li>Diseño de material impreso</li>
@@ -167,7 +167,7 @@ export default component$(() => {
                     empresas a crear interfaces digitales efectivas y atractivas
                     que brinden una experiencia de usuario óptima.
                   </h2>
-                  <ul class="list-disc p-5 text-2xl">
+                  <ul class="list-disc p-5 text-xl">
                     <li>Investigación y análisis de usuario</li>
                     <li>Diseño de experiencia de usuario</li>
                     <li>Diseño de interfaz de usuario</li>
@@ -185,7 +185,7 @@ export default component$(() => {
                     del usuario. Nuestros servicios de desarrollo web y móvil
                     incluyen:
                   </h2>
-                  <ul class="list-disc p-5 text-2xl">
+                  <ul class="list-disc p-5 text-xl">
                     <li>Diseño web</li>
                     <li>Desarrollo web</li>
                     <li>Diseño de aplicaciones móviles</li>
